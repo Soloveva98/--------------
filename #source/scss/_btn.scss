@@ -1,0 +1,59 @@
+///*BTN*///////////////////////////////
+.btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 1.05em 1.7em;
+	min-width: 170px;
+
+	text-decoration: none;
+	background: none;
+	cursor: pointer;
+	font-family: inherit;
+	color: $black;
+	font-size: 1.06rem;
+	line-height: 1.1;
+	text-align: center;
+	text-transform: uppercase;
+
+	border: 1px solid $grey;
+	border-radius: 30px;
+	&:focus{outline: none;}
+
+	transition: background-color 0.2s linear, color 0.2s linear, box-shadow 0.2s linear, border-color 0.2s linear;
+
+	+ .btn{
+		margin-left: 1rem;
+	}
+	&:hover{
+		background-color: $black;
+		color: $white;
+		box-shadow: 2px 2px 8px rgba(#000, 24%);
+		border-color: $black;
+	}
+
+	/*Modificators*////////////////
+	&--sm{
+		padding: 0.7em 1.1em;
+		min-width: 0;
+		font-size: 0.94rem;
+		font-weight: 700;
+		border-width: 2px;
+	}
+	&--thin{
+		min-width: 145px;
+		font-size: 0.8rem;
+	}
+	@media (max-width: $tablet) {
+		font-size: 1rem;
+		padding: 1em 1.5em;
+		min-width: 140px;
+	}
+	@media (max-width: $mobile-sm) {
+		display: block;
+		width: 100%;
+		+ .btn{
+			margin-left: 0;
+			margin-top: 1rem;
+		}
+	}
+}

@@ -1,0 +1,81 @@
+//FOOTER
+
+.footer{
+	padding: 1rem 0;
+	background-color: $black;
+}
+
+.footer__inner{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	@media (max-width: $tablet) {
+		justify-content: center;
+	}
+}
+.footer__credits{
+	display: flex;
+	align-items: center;
+	@media (max-width: $tablet) {
+		margin-bottom: 0.5rem;
+	}
+	@media (max-width: $mobile-sm) {
+		flex-direction: column;
+	}
+}
+.footer__copy{
+	padding-right: 0.8rem;
+	margin-right: 1rem;
+	color: #8d8d8e;
+	font-size: 0.94rem;
+	border-right: 1px solid $grey;
+	@media (max-width: $mobile-sm) {
+		margin-right: 0;
+		margin-bottom: 0.5rem;
+		border-right: 0;
+	}
+}
+.footer__social{
+	display: flex;
+	align-items: center;
+	& a{
+		margin-right: 1.2rem;
+		text-decoration: none;
+		&:last-child{margin-right: 0;}
+		@media (max-width: $mobile-sm) {
+		margin: 0.5rem;
+		}
+	}
+}
+
+.footer__nav{
+	font-size: 0.94rem;
+	display: flex;
+	align-items: center;
+	@media (max-width: $mobile-sm) {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+.footer__nav-link{
+	margin-left: 1.5rem;
+	color: #8d8d8e;
+	text-decoration: none;
+	&:hover{text-decoration: underline;}
+	@media (max-width: $mobile-sm) {
+		margin: 0.5rem;
+	}
+}
+
+.footer__nav-link--btn{
+	padding: 0.6rem 1.4rem;
+	border-radius: 16px;
+	border: 1px solid #8d8d8e;
+	text-transform: uppercase;
+	&:hover{
+		text-decoration: none;
+		background-color: $grey-light;
+		color: $black;
+	}
+}
+

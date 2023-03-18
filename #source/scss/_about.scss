@@ -1,0 +1,75 @@
+//ABOUT
+
+.about {
+	padding: 8.4rem 0;
+	@media (max-width: $tablet) {
+		padding: 3rem 0;
+	}
+}
+.about__inner {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 1090px;
+}
+.about__photo,
+.about__content{
+	width: 50%;
+	@media (max-width: $tablet) {
+		width: 100%;
+		text-align: center;
+	}
+}
+.about__photo {
+	@media (max-width: $tablet) {
+		order: 2;
+		padding-left: 21%;
+	}
+}
+
+.about__content {
+	padding-left: 3.1rem;
+	margin-top: 2rem;
+	@media (max-width: $tablet) {
+		order: 1;
+		padding-left: 0;
+		margin-bottom: 1rem;
+	}
+}
+.about__title {
+	color: $black;
+	font-size: 3rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin-bottom: 0.5rem;
+	@media (max-width: $notebook) {
+		font-size: 2.5rem;
+	}
+	@media (max-width: $mobile) {
+		font-size: 2rem;
+	}
+}
+.about__bigtitle {
+	position: relative;
+	left: -10px;
+	color: #dedede;
+	font-size: 6.13rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	line-height: 1.1;
+	margin-bottom: 3rem;
+	@media (max-width: $notebook) {
+		font-size: 4rem;
+	}
+	@media (max-width: $tablet) {
+		font-size: 3rem;
+		position: static;
+	}
+}
+.about__text {
+	margin-bottom: 3.8rem;
+	color: #717072;
+	font-size: 0.8rem;
+	font-weight: 300;
+	line-height: 2;
+}
+.btn {}

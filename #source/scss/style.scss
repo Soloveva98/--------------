@@ -1,0 +1,88 @@
+// Файл обнуляющих стилей
+@import "nullstyle.scss";
+
+
+//ШРИФТЫ
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,200;1,400&display=swap');
+
+//ПЕРЕМЕННЫЕ
+$black: #2B2A2C;
+$grey: #6a696b;
+$grey-light: #8d8d8e;
+$white: #fff;
+//ПЕРЕМЕННЫЕ МЕДИАЗАПРОСЫ
+$notebook: 1199px;
+$tablet: 991px;
+$mobile: 767px;
+$mobile-sm: 568px;
+
+
+//МИКСИНЫ
+//Адаптивный шрифт
+$maxWidth: 1200;
+
+@mixin adaptiv-font($pcSize, $mobSize) {
+	$addSize: $pcSize - $mobSize;
+	$addMobSize: $addSize + $addSize * 0.7;
+	@media (max-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addMobSize} * ((100vw - 320px) / #{$maxWidth}));
+	}
+	@media (min-width: 767px) {
+		font-size: calc(#{$mobSize + px} + #{$addSize} * (100vw / #{$maxWidth}));
+	}
+}
+
+//ОБНУЛЕНИЕ
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {margin: 0;}
+p {margin: 0;}
+
+html{
+	font-size: 15px;
+}
+
+//ОБЩЕЕ
+body{
+	margin: 0;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	&.no-scroll{
+		overflow: hidden;
+	}
+}
+.container{
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+//Vendor
+@import "slick";
+
+
+//Blocks
+@import "slider";
+@import "header";
+@import "burger";
+@import "btn";
+@import "intro";
+@import "works";
+@import "about";
+@import "reviews";
+@import "news";
+@import "footer";
+@import "modal";
+@import "modal-work";
+@import "modal-resume";
+@import "modal-contact";
+
+
+//Helpers
+@import "helpers";

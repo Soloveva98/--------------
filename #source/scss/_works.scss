@@ -1,0 +1,83 @@
+//WORKS and PORTFOLIO
+
+.works {
+	margin: 2.8rem 0;
+	&__nav {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 1.4rem;
+	}
+	&__nav-link {
+		margin: 0 1.2rem;
+		color: $grey;
+		font-size: 12px;
+		text-decoration: none;
+		&:hover{text-decoration: underline;}
+	}
+}
+
+.portfolio{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -1rem;
+	margin-bottom: 2.8rem;
+	@media (max-width: $mobile-sm) {
+		margin: 2.8rem auto;
+	}
+}
+.portfolio__col{
+	flex-basis: 33.33333%;
+	padding: 1rem;
+	@media (max-width: $mobile) {
+		flex-basis: 50%;
+	}
+	@media (max-width: $mobile-sm) {
+		flex-basis: 100%;
+	}
+
+}
+
+.work {
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 0 0 4px rgba(#000, 25%);
+
+	transition: box-shadow 0.2s linear;
+	&:hover{
+		box-shadow: 0 0 25px rgba(#000, 25%);
+	}
+	@media (max-width: $mobile-sm) {
+		max-width: 370px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+.work__image {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	
+}
+.work__content {
+	padding: 1rem 0.8rem;
+}
+.work__cat {
+	color: $black;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+	margin-bottom: 1rem;
+}
+.work__title {
+	display: flex;
+	justify-content: space-between;
+	color: $black;
+	font-size: 1.06rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+.work__date {}
+
+
+
+
+

@@ -1,0 +1,94 @@
+//MODAL-CONTACT
+
+.contact{
+	display: flex;
+	background: #717173 right center no-repeat;
+	@media (max-width: $tablet) {
+		background: #717173 right center no-repeat;
+	}
+	@media (max-width: $mobile) {
+		background: none;
+	}
+}
+
+.contact__left{
+	width: 47%;
+	padding: 2rem;
+	background-color: #fff;
+	@media (max-width: $mobile) {
+		width: 100%;
+	}
+}
+
+.contact__info{
+	list-style: none;
+	margin: 2rem 0 3rem;
+	font-size: 0.94rem;
+	color: $black;
+	font-weight: 300;
+	@media (max-width: $tablet) {
+		margin: 1.2rem 0 2rem;
+	}
+	@media (max-width: $mobile-sm) {
+		font-size: 0.8rem;
+	}
+}
+
+.contact__info-item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5rem;
+	&:last-child{margin-bottom: 0;}
+}
+.contact__info-icon{margin-right: 1rem;}
+
+///FORM
+.form__group{
+	margin-bottom: 1.8rem;
+	@media (max-width: $tablet) {
+		margin-bottom: 1rem;
+	}
+}
+
+.form__label{
+	display: inline-block;
+	margin-bottom: 0.6rem;
+	font-size: 0.8rem;
+	color: $black;
+	font-weight: 700;
+}
+.form__input,
+.form__textarea {
+	display: block;
+	width: 100%;
+
+	padding: 1.3rem 1.8rem;
+
+	border: 1px solid rgba(#707070, 30%);
+	border-radius: 1.8rem;
+
+	font-family: inherit;
+	font-size: 0.8rem;
+	line-height: 1.2;
+	font-weight: 400;
+	color: $black;
+	&:focus{
+		outline: 0;
+		border-color: #36abc7;
+	}
+	&::placeholder{
+		color: $black;
+		font-weight: 300;
+	}
+	@media (max-width: $tablet) {
+		padding: 0.8rem 1.2rem;
+	}
+}
+
+.form__textarea{
+	height: 200px;
+	resize: none;
+	@media (max-width: $tablet) {
+		height: 130px;
+	}
+}

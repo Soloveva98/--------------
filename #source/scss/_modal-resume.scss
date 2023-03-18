@@ -1,0 +1,200 @@
+//MODAL RESUME
+
+.modal__content{
+	padding: 5rem 1rem;
+	@media (max-width: $mobile) {
+		padding: 3rem 0.5rem;
+	}
+}
+.modal__title{
+	font-size: 3rem;
+	color: $black;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 3.6rem;
+	@media (max-width: $tablet) {
+		font-size: 2rem;
+	}
+	@media (max-width: $mobile) {
+		margin-bottom: 2rem;
+	}
+	@media (max-width: $mobile-sm) {
+		font-size: 1.5rem;
+	}
+}
+
+/*TIMELINE*////////////////
+.timeline{
+	display: flex;
+	margin: 4.2rem auto;
+	width: 100%;
+	max-width: 768px;
+	position: relative;
+	&:before{
+		content: '';
+		display: block;
+		width: 1px;
+		height: 100%;
+		background-color: $black;
+		position: absolute;
+		top: 0;
+		left: 50%;
+		z-index: 1;
+	}
+	@media (max-width: $mobile) {
+		display: block;
+		margin: 2rem auto;
+		text-align: center;
+		&:before{display: none;}
+	}
+}
+
+.timeline__col{
+	width: 50%;
+	&--left{
+		text-align: right;
+		padding-right: 3.2rem;
+	}
+	&--right{
+		padding-left: 3.2rem;
+	}
+	@media (max-width: $mobile) {
+		width: 100%;
+		&--left{text-align: center;padding-right: 0;margin-bottom: 1.5rem;}
+		&--right{padding-left: 0;}
+	}
+}
+
+.timeline__title{
+	font-size: 1.2rem;
+	color: $black;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 2.6rem;
+	@media (max-width: $mobile) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.timeline__item{
+	margin-bottom: 2.6rem;
+	&:last-child{margin-bottom: 0;}
+	@media (max-width: $mobile) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.timeline__date {
+	text-decoration: underline;
+	font-size: 0.94rem;
+	color: $black;
+	margin-bottom: 0.8rem;
+}
+
+.timeline__subtitle {
+	font-size: 1.06rem;
+	color: $black;
+	font-weight: 700;
+	margin-bottom: 0.2rem;
+}
+.timeline__position {
+	font-size: 0.94rem;
+	color: $black;
+	font-style: italic;
+
+}
+.timeline__text {
+	margin-top: 0.8rem;
+	font-size: 0.8rem;
+	color: $grey;
+	font-weight: 300;
+	line-height: 1.5;
+}
+
+//SKILLS
+.progress-bar{
+	margin-bottom: 2.6rem;
+	@media (max-width: $mobile) {
+		margin-bottom: 1.5rem;
+	}
+}
+
+.progress-bar__item{
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.3rem;
+	@media (max-width: $mobile) {
+		justify-content: center;
+	}
+}
+
+.progress-bar__left{
+	width: 100%;
+	max-width: 100px;
+	text-align-last: left;
+}
+
+.progress-bar__title{
+	font-size: 0.94rem;
+	font-weight: 300;
+}
+
+.progress-bar__bar{
+	width: 139px;
+	height: 6px;
+	background-color: #EFEFEF;
+}
+
+.progress-bar__right{
+	padding-left: 1.2rem;
+}
+.progress-bar__progress{
+	height: 100%;
+	background-color: $grey;
+	transition: width 0.2s linear;
+}
+
+//AWARDS
+
+.awards__item {
+	display: flex;
+	margin-bottom: 2rem;
+	&:last-child{margin-bottom: 0;}
+	@media (max-width: $mobile) {
+		flex-direction: column;
+	}
+}
+.awards__date {
+	text-decoration: underline;
+	@media (max-width: $mobile) {
+		margin-bottom: 0.8rem;
+	}
+}
+.awards__info {
+	padding-left: 1.3rem;
+	@media (max-width: $mobile) {
+		padding-left: 0;
+	}
+}
+.awards__title {
+	color: $black;
+	font-size: 1.06rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 0.5rem;
+}
+.awards__prof {
+	font-size: 0.93rem;
+	font-style: italic;
+	color: #707070;
+	margin-bottom: 0.4rem;
+}
+.awards____text {
+	font-size: 0.8rem;
+	color: #6A696B;
+	line-height: 1.5;
+}
+
+
+
+

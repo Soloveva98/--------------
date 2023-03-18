@@ -1,0 +1,153 @@
+//MODAL_WORK
+
+.modal-work {
+	display: flex;
+	@media (max-width: $tablet) {
+		flex-wrap: wrap;
+	}
+}
+
+.modal-work__preview {
+	width: 65%;
+	position: relative;
+	overflow: hidden;
+	@media (max-width: $tablet) {
+		width: 100%;
+		order: 2;
+	}
+}
+
+.modal-work__photo{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 1;
+	transform: translate3d(-50%, -50%, 0);
+	@media (max-width: $tablet) {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+}
+
+.modal-work__content {
+	position: relative;
+	width: 35%;
+	padding: 3.4rem 6.6rem 1rem 1.73rem;
+	@media (max-width: $notebook) {
+		padding: 3rem 3.5rem 1rem 1.5rem;
+	}
+	@media (max-width: $tablet) {
+		width: 100%;
+		order: 1;
+		padding-right: 1.5rem;
+	}
+	@media (max-width: $mobile-sm) {
+		padding: 1rem 1rem;
+	}
+}
+
+
+.modal-work__header {
+	margin-bottom: 2.2rem;
+	@media (max-width: $mobile-sm) {
+		margin-bottom: 1.2rem;
+	}
+}
+
+.modal-work__title {
+	margin-bottom: 0.2rem;
+	font-size: 2.12rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	@media (max-width: $mobile-sm) {
+	font-size: 1.3rem;
+	}
+}
+
+.modal-work__info {
+	font-size: 1.2rem;
+	color: $grey;
+	text-transform: uppercase;
+	&-divider{
+		margin: 0 0.5rem;
+	}
+	@media (max-width: $mobile-sm) {
+		font-size: 0.9rem;
+	}
+}
+
+.modal-work__client {
+	margin-bottom: 2.2rem;
+	&-title{
+		margin-bottom: 0.2rem;
+		font-size: 1.06rem;
+		font-weight: 700;
+	}
+	&-company{
+		font-size: 0.94rem;
+		font-style: italic;
+		color: $grey;
+	}
+	@media (max-width: $notebook) {
+		margin-bottom: 1rem;
+	}
+	@media (max-width: $mobile-sm) {
+		&-title{font-size: 1rem;}
+	&-company{font-size: 0.8rem;}
+	}
+}
+.modal-work__text {
+	margin-bottom: 8.66rem;
+	font-size: 0.8rem;
+	font-weight: 300;
+	color: $grey;
+	line-height: 2;
+	@media (max-width: $notebook) {
+		margin-bottom: 5rem;
+	}
+	@media (max-width: $tablet) {
+		margin-bottom: 3rem;
+	}
+	@media (max-width: $mobile-sm) {
+		font-size: 0.7rem;
+		margin-bottom: 1.4rem;
+	}
+}
+
+.modal-work__footer {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 1.8rem 1rem;
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	z-index: 1;
+	@media (max-width: $mobile-sm) {
+		padding: 0 0.7rem 0.5rem;
+	}
+}
+
+.modal-work__btn {
+	text-decoration: none;
+	background: none;
+	font-size: 0.94rem;
+	color: $black;
+	text-transform: uppercase;
+	font-family: inherit;
+	cursor: pointer;
+	@media (max-width: $mobile-sm) {
+		font-size: 0.7rem;
+	}
+}
+.modal-work__btn--prev {
+	display: flex;
+	align-items: center;
+	& img{padding-right: 5px;}
+}
+.modal-work__btn--next {
+	display: flex;
+	align-items: center;
+	& img{padding-left: 5px;}
+}

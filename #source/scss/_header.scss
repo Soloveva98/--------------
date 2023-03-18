@@ -1,0 +1,121 @@
+/////////////////HEADER
+
+.header{
+	padding: 1.2rem 0;
+	position: relative;
+	@media (max-width: $mobile) {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 1000;
+		background-color: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+	}
+}
+
+.header__inner{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header.fixed{
+	width: 100%;
+	position: fixed;
+	z-index: 1000;
+	background-color: #fff;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+.header.fixed .header__inner{
+	border-bottom: 0;
+}
+
+/*ЛОГО*/
+.user {
+	display: flex;
+	&__avatar {
+		width: 57px;
+		height: 57px;
+		& img{border-radius: 50%;}
+	}
+	&__content {padding-left: 9px;}
+	&__name {
+		color: $black;
+		font-size: 1.06rem;
+		font-weight: 700;
+		line-height: 1.2;
+		margin-bottom: 4px;
+	}
+	&__prof {
+		color: $grey;
+		font-size: 0.8rem;
+	}
+}
+
+/*НАВИГАЦИЯ*/
+
+.nav{
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	align-items: center;
+	@media (max-width: $mobile) {
+		position: absolute;
+		width: 100%;
+		height: auto;
+		padding: 1rem;
+		top: 100%;
+		right: 0;
+		z-index: 1000;
+		background-color: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		display: none;
+		&.show{
+			display: flex;
+		}
+	}
+	&__link{
+		margin-left: 2rem;
+		position: relative;
+		color: $black;
+		font-size: 0.93rem;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-decoration: none;
+		&:after{
+			content: '';
+			width: 0;
+			height: 2px;
+			background-color: $black;
+			position: absolute;
+			bottom: -5px;
+			left: 0;
+			z-index: 1;
+			transition: width 0.3s linear;
+		}
+		&:hover:not(.nav__link--btn){
+			&:after{width: 100%;}
+		}
+		&--btn{
+			padding: 0.66rem 2rem;
+			border-radius: 19px;
+			border: 2px solid $black;
+			transition: background-color 0.2s linear, color 0.2s linear;
+			&:hover{
+				background-color: $black;
+				color: $white;
+			}
+		}
+		@media (max-width: $mobile) {
+			width: 100%;
+			margin-left: 0;
+			margin-bottom: 0.5rem;
+			padding: 0.5rem 1rem;
+		}
+	}
+}
+
+
+
